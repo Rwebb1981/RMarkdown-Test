@@ -1,0 +1,30 @@
+---
+title: "RMarkdown Test 2"
+author: "Rick"
+date: "11/01/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Things I like
+
+Here is a list of my favorite things:
+
+* **Amee**
+* Muay Thai
+* [Daisy](https://www.dreamiestreats.co.uk/our-products)
+* Music
+
+# Things my cat likes
+
+Here is a list of my cat's favorite things:
+
+* *Treats*
+* Cuddles
+* Her new bed
+
+![Figure 1: Dreamies!](C:\Users\rwebb\Documents\Work & Home Stuff\Work Bits and Bobs\Informal Education\R Test Folder\Dreamies Image 2.jpg){width=20%}
+
