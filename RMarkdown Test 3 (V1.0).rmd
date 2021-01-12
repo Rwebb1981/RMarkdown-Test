@@ -1,0 +1,84 @@
+---
+title: "RMarkdown Test 3"
+author: "Rick"
+date: "12/01/2021"
+output: 
+  html_document:
+    code_folding: "show"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+
+```{r load, Libraries}
+library(tidyverse)
+library(knitr)
+
+mtcars <- mtcars
+```
+
+In this tutorial we will provide: blah blah blah!
+For shortcuts see below:
+
+- **bold text** and _bold text_
+- *italics text* and _italics text_
+- superscript^2^
+- Subscript~0~
+- ~~strikethrough~~
+- embedded links such as [link](www.rstudio.com)
+
+You can create white space with this character
+
+<br>
+
+and you can create a faint horizontal rule this way:
+
+***
+
+You can create a range of headers like below:
+
+# Biggest header
+## Second biggest header
+###Third biggest header
+#### Fourth buggest header
+##### Fifth biggest header
+###### Smallest header
+
+We can embed equations by putting a dollar sign before and after: $E = M * C^{2}$
+
+RCode can also be embedded in the following way. Suppose I want to return the mean of the 'hp' variable from the 'mtcars' dataset, when code is surrounded by back ticks and the letter r this can be done. For example, the mean is `r mean(mtcars$hp)`. As mentioned earlier, a new code chunk can be created by enclosing code by a pair of ```
+
+A list can be created like this:
+
+* unordered list
+* item 2
+  + sub-item 1
+  + sub-item 2
+  
+1. ordered list
+2. item 2
+  + sub-item 1
+  + sub-item 2
+  
+A table can be created like this:
+
+First header | Second header
+-------------|--------------
+Content cell | Content cell
+Content cell | Content cell
+Content cell | Content cell
+
+However, creating tables can be more interesting that this.
+
+Conside the following:
+
+```{r}
+head(mtcars)
+```
+
+```{r}
+kable(head(mtcars))
+```
+
